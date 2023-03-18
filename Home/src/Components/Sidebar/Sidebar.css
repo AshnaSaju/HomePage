@@ -38,13 +38,13 @@
     /* padding: 0 30px; */
     height: 60px;
 }
-.sidebar li a:hover{
+.sidebar li a:hover,Link:hover{
     background-color: #3a3b3c;
     border-radius: 10px;
 }
 
 
-.sidebar li a{
+.sidebar li a,Link{
     text-decoration: none;
     color: #fff;
     display: flex;
@@ -58,7 +58,7 @@
 .sidebar li span{
     font-size: 16px;
 }
-.sidebar li a i{
+.sidebar li Link i{
     font-size: 1.5rem;
 }
 .sidebar_contents{

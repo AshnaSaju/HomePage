@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sidebar.css"
 import pic3 from "../../assets/blockchain.png"
+import {Link} from "react-router-dom"
 function SideBar(){
           return (
       
@@ -24,10 +25,10 @@ function SideBar(){
                     <ul className="menu_links">
                       <div className="main_links">
                         <li>
-                          <a href>
+                          <Link to="/">
                             <i className="bx bxs-home" />
                             <span>Home</span>
-                          </a>
+                          </Link>
                         </li>
                         <li>
                           <a href>
@@ -48,10 +49,10 @@ function SideBar(){
                           </a>
                         </li>
                         <li>
-                          <a href>
+                          <Link to='/myposts'>
                             <i className="bx bx-archive-in" />
-                            <span>Your Posts</span>
-                          </a>
+                            <span>My Posts</span>
+                          </Link>
                         </li>
                         <li>
                           <a href>
