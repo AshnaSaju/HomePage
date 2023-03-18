@@ -5,6 +5,7 @@ import SideBar from "../Sidebar/Sidebar"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import "./Home.css"
 import MyPosts from "../MyPosts/MyPosts"
+import MyProfile from "../MyProfile/MyProfile"
 function Home() {
     return (
         <div className="main_container">
@@ -17,6 +18,7 @@ function Home() {
                     </>
                     }/>
                     <Route exact path="/myposts" element={<MyPosts/>} />
+                    <Route exact path="/myprofile" element={<MyProfile/>}/>
 
                 </Routes>
             </Router>

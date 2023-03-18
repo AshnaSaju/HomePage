@@ -55,10 +55,10 @@ function SideBar(){
                           </Link>
                         </li>
                         <li>
-                          <a href>
+                          <Link to="/myprofile">
                             <i className="bx bx-user-pin" />
                             <span>Profile</span>
-                          </a>
+                          </Link>
                         </li>
                         <li>
                           <a href>
