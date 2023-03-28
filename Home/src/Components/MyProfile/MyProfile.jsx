@@ -6,48 +6,56 @@ const MyProfile = () => {
     const name = "Ashna Saju"
     return (
         <div className='MyProfile'>
-            <h2>
-                Welcome, {name}
-            </h2>
             <form>
                 <div className="profileimg">
-
-                    <img src={userimg} alt="" width={100} />
-                    <button style={{ width: "20%",marginTop:"1%"}}>Change Profile Photo</button>
+                    <img src={userimg} alt="" width={75} />
+                    <button>Change Profile Photo</button>
                 </div>
 
-                <div className="name field">
-                    <div>
-                        Name
+                <div className="name row">
+                    <div className='field'>
+                        <div>
+                            Name
+                        </div>
+                        <input className='txtbox' type="text" placeholder='Enter your Name' />
                     </div>
-                    <input className='txtbox' type="text" />
+                    <div className='field'>
+                        <div>
+                            Username
+                        </div>
+                        <input className='txtbox' type="text" placeholder='Enter your username' />
+                    </div>
                 </div>
-                <div className="username field">
-                    <div>
-                        Username
+
+
+                <div className="phonenumber row">
+                    <div className="field">
+                        <div>
+                            Phone Number
+                        </div>
+                        <input className='txtbox' type="text" placeholder='Enter your Phone Number' />
                     </div>
-                    <input className='txtbox' type="text" />
+                    <div className="field">
+                        <div>
+                            E-Mail
+                        </div>
+                        <input className='txtbox' type="text" placeholder='Enter your E-Mail' />
+                    </div>
+
                 </div>
-                <div className="phonenumber field">
-                    <div>
-                        Phone Number
+                <div className="bio row">
+                    <div className="field">
+                        <div style={{ fontSize: "large" }}>
+                            Bio
+                        </div>
+                        <textarea name="bio" id="" rows="2" style={{ width: "91%", borderRadius: "5px", padding: "2%", fontSize: "large", border: "2px solid black" }} placeholder='About Yourself'></textarea>
                     </div>
-                    <input className='txtbox' type="text" />
-                </div>
-                <div className="email field">
-                    <div>
-                        E-Mail
-                    </div>
-                    <input className='txtbox' type="text" />
-                </div>
-                <div className="bio field">
-                    <div>
-                        Bio
-                    </div>
-                    <textarea name="bio" id="" rows="5" style={{ width: "60%" }}></textarea>
                 </div>
 
                 <div className="gender">
+                <h3 >
+                    Gender :
+                </h3>
                     <div className="male">
                         <input type="radio" name="gender" id="Male" value="Male" />
                         <label for="Male">Male</label>
