@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import ModalContext from "../../Context/ModalContext";
 function SideBar() {
   const context = useContext(ModalContext)
-  const {openViewModal,openPeopleModal} = context
+  const {openViewModal,openPeopleModal,openCreateModal} = context
   return (
 
     <div className="sidebar">
@@ -52,10 +52,10 @@ function SideBar() {
                   </a>
                 </li>
                 <li>
-                  <a href>
+                  <Link onClick={()=>{openCreateModal()}}>
                     <i className="bx bx-edit-alt" />
                     <span>Create</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link to='/myposts'>

@@ -20,8 +20,19 @@ const ModalStates = (props) => {
       const closePeopleModal = ()=>{
           setOpenPeople(false)
       }
+
+      
+    const [createModal, setCreateModal] = useState(false)
+    const openCreateModal = ()=>{
+        setCreateModal(true)
+    }
+
+    const closeCreateModal = ()=>{
+        setCreateModal(false)
+    }
+
   return (
-    <ModalContext.Provider value={{openView,openViewModal,closeViewModal,openPeople,openPeopleModal,closePeopleModal}}>
+    <ModalContext.Provider value={{openView,openViewModal,closeViewModal,openPeople,openPeopleModal,closePeopleModal,createModal,openCreateModal,closeCreateModal}}>
         {props.children}
     </ModalContext.Provider>
   )

@@ -8,6 +8,7 @@ import MyPosts from "../MyPosts/MyPosts"
 import MyProfile from "../MyProfile/MyProfile"
 import FriendModal from "../Modals/FriendsModal/FriendModal"
 import PeopleModal from "../Modals/PeopleModal/PeopleModal"
+import CreateModal from "../Modals/CreateModal/CreateModal"
 
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
             <SideBar />
                 <FriendModal/>
                 <PeopleModal/>
+                <CreateModal/>
                 <Routes>
                     <Route exact path="/" element={<>
                         <Middlesection />
